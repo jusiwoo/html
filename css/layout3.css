@@ -38,11 +38,9 @@ div.content.cnt1>div.contentGrid>div.section>div.artBottom>div.article>div.texts
 /* 컨텐츠2 */
 div.content.ctn2{}
 div.content.ctn2>div.contentGrid{}
-div.content.ctn2>div.contentGrid{}
 div.content.ctn2>div.contentGrid>div.header{}
 div.content.ctn2>div.contentGrid>div.header>h2{}
 div.content.ctn2>div.contentGrid>div.header>p{}
-div.content.ctn2>div.contentGrid>div.section{}
 div.content.ctn2>div.contentGrid>div.section{}
 div.content.ctn2>div.contentGrid>div.section>div.article{}
 div.content.ctn2>div.contentGrid>div.section>div.article>video{}

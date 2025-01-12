@@ -76,5 +76,13 @@ div.footer>div.footerGrid>div.sns>i{}
 div.content{}
 div.content>div.contentGrid{}
 div.content>div.contentGrid>div.header{}
+div.content>div.contentGrid>div.header>h2{}
 div.content>div.contentGrid>div.section{}
-div.content>div.contentGrid>div.section>h2{}
+div.content>div.contentGrid>div.section div.article{
+    background-color: mediumaquamarine;
+}
+div.content>div.contentGrid>div.section>div.article>img{}
+div.content>div.contentGrid>div.section>div.article>div.texts{}
+div.content>div.contentGrid>div.section>div.article>div.texts>h3{}
+div.content>div.contentGrid>div.section>div.article>div.texts>h4{}
+div.content>div.contentGrid>div.section>div.article>div.texts>p{}

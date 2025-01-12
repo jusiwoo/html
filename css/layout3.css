@@ -2,8 +2,8 @@
 div.headerTop{
     /* 스타일 속성 */
 }
-div.headerTop>div.headerTopGrid{}
-div.headerTop>div.headerTopGrid>i{}
+div.hdrTop>div.hdrTopGrid{}
+div.hdrTop>div.hdrTopGrid>i{}
 
 /* 헤더 */
 div.header{}
@@ -70,3 +70,11 @@ div.footer>div.footerGrid>h4{}
 div.footer>div.footerGrid>p{}
 div.footer>div.footerGrid>div.sns{}
 div.footer>div.footerGrid>div.sns>i{}
+
+/* 구조가 겹치는 태그들을 전체적으로 한번씩 선택해 줍니다.
+이유: 한번에 공통적으로 수정할 스타일을 위해서 */
+div.content{}
+div.content>div.contentGrid{}
+div.content>div.contentGrid>div.header{}
+div.content>div.contentGrid>div.section{}
+div.content>div.contentGrid>div.section>h2{}

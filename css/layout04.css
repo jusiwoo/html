@@ -1,29 +1,71 @@
-div.hdrTop{}
-div.hdrTop>div.hdrTopGrid{
-    /* 속성명 : 속성값; */
-    width: 80%;
-    max-width: 1080px;
-}
-div.hdrTop>div.hdrTopGrid>i{}
+@import url('./reset.css');
 
-div.header{}
-div.header>div.headerGrid{}
-div.header>div.headerGrid>h1{
+/* 숫자 컬러는 앞에 반드시 #! */
+/* 속성명 : 속성값; */
+/* 크기 단위: px, %, vw, vh, em, rem */
+
+/* 헤더탑 */
+div.hdrTop{
+    background-color: #212517;
+}
+div.hdrTop>div.hdrTopGrid{
     width: 80%;
     max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
 }
-div.header>div.headerGrid>ul{}
-div.header>div.headerGrid>ul>li{}
+div.hdrTop>div.hdrTopGrid>i{
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+/* 헤더랩 */
+div.headerWrap{
+    background-color: #a31f30;
+}
+div.headerWrap>div.header{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.headerWrap>div.header>h1{
+    line-height: 80px;
+    font-size: 25px;
+}
+div.headerWrap>div.header>ul{
+    display: flex;
+    column-gap: 10px;
+}
+div.headerWrap>div.header>ul>li{
+    line-height: 80px;
+    font-size: 20px;
+}
 
 /* 컨텐츠 공통 */
 div.content{}
 div.content>div.contentGrid{
     width: 80%;
     max-width: 1080px;
+    margin: 0 auto;
 }
 div.content>div.contentGrid>div.header{}
-div.content>div.contentGrid>div.header>h2{}
-div.content>div.contentGrid>div.header>p{}
+div.content>div.contentGrid>div.header>h2{
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+div.content>div.contentGrid>div.header>p{
+    height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    width: calc(100% / 12 * 6);
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
 div.content>div.contentGrid>div.section{}
 div.content>div.contentGrid>div.section div.article{}
 div.content>div.contentGrid>div.section div.article>img{}
@@ -60,7 +102,9 @@ div.content.ctn1>div.contentGrid>div.section>div.artBottom>div.article>div.texts
 /* 컨텐츠2 */
 div.content.ctn2{}
 div.content.ctn2>div.contentGrid{}
-div.content.ctn2>div.contentGrid>div.header{}
+div.content.ctn2>div.contentGrid>div.header{
+    background-color: #f00;
+}
 div.content.ctn2>div.contentGrid>div.header>h2{}
 div.content.ctn2>div.contentGrid>div.header>p{}
 div.content.ctn2>div.contentGrid>div.section{}
@@ -86,10 +130,13 @@ div.content.ctn3>div.contentGrid>div.section>div.article>div.texts>h3{}
 div.content.ctn3>div.contentGrid>div.section>div.article>div.texts>p{}
 
 /* 푸터 */
-div.footer{}
+div.footer{
+    background-color: #a31f30;
+}
 div.footer>div.footerGrid{
     width: 80%;
     max-width: 1080px;
+    margin: 0 auto;
 }
 div.footer>div.footerGrid>h4{}
 div.footer>div.footerGrid>p{}

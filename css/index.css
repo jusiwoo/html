@@ -142,13 +142,23 @@ div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>div.i
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>div.icons>i{}
 
 /* 컨텐츠2 */
-div.cntWrap>div.content.cnt02{}
+div.cntWrap>div.content.cnt02{
+    width: 100%;
+    max-width: none;
+}
 div.cntWrap>div.content.cnt02>div.header{
     background-color: #a31f30;
 }
 div.cntWrap>div.content.cnt02>div.header>h2{}
-div.cntWrap>div.content.cnt02>div.header>p{}
-div.cntWrap>div.content.cnt02>div.section{}
+div.cntWrap>div.content.cnt02>div.header>p{
+    width: calc(80% / 12 * 6);
+    max-width: 520px;
+}
+div.cntWrap>div.content.cnt02>div.section{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
 div.cntWrap>div.content.cnt02>div.section>div.article{
     display: flex;
 }
@@ -158,6 +168,7 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
     width: 50%;
+    text-align: center;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h4{}

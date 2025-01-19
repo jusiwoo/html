@@ -28,3 +28,7 @@ div.cntWrap>div.content>div.section div.article>div.texts>h4{}
 div.cntWrap>div.content>div.section div.article>div.texts>p{}
 
 /* 컨텐츠1 */
+div.cntWrap:nth-of-type(3){
+    background-color: aqua;
+}
+div.cntWrap>div.content.cnt03{}

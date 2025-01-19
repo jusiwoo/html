@@ -28,6 +28,7 @@ div.headerWrap>div.header{
     color: #fff;
     text-transform: capitalize;
     line-height: 80px;
+    font-weight: 700;
 }
 div.headerWrap>div.header>h1{
     font-size: 25px;
@@ -53,6 +54,7 @@ div.cntWrap>div.content>div.header>h2{
     font-size: 40px;
     text-align: center;
     text-transform: capitalize;
+    font-weight: 700;
 }
 div.cntWrap>div.content>div.header>p{
     width: calc(100% / 12 * 6);
@@ -72,12 +74,18 @@ div.cntWrap>div.content>div.section div.article>div.texts>h3{
     line-height: 40px;
     font-size: 25px;
     text-transform: capitalize;
+    font-weight: 700;
 }
 div.cntWrap>div.content>div.section div.article>div.texts>h4{
     line-height: 40px;
     font-size: 14px;
 }
-div.cntWrap>div.content>div.section div.article>div.texts>p{}
+div.cntWrap>div.content>div.section div.article>div.texts>p{
+    line-height: 20px;
+    height: 80px;
+    font-size: 12px;
+    overflow: hidden;
+}
 
 /* 컨텐츠1 */
 div.cntWrap>div.content.cnt01{}
@@ -90,23 +98,33 @@ div.cntWrap>div.content.cnt01>div.section>div.artTop{
     column-gap: 20px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article{}
-div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image{}
+div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image{
+    height: 320px;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>h4{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>p{}
-div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>div.icons{}
+div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>div.icons{
+    line-height: 40px;
+    font-size: 22px;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>div.icons>i{}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm{
     display: flex;
     column-gap: 20px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article{}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image{}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image{
+    height: 320px;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts{}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>p{}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>div.icons{}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>div.icons{
+    line-height: 40px;
+    font-size: 22px;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>div.icons>i{}
 
 /* 컨텐츠2 */
@@ -128,8 +146,20 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h4{}
-div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{}
-div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.button{}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{
+    height: 120px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.button{
+    line-height: 40px;
+    color: #fff;
+    background-color: #212517;
+    width: calc(100% / 6 * 4);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 /* 컨텐츠3 */
 div.cntWrap>div.content.cnt03{}
@@ -155,7 +185,9 @@ div.ftrWrap>div.footer{
     max-width: 1080px;
     margin: 0 auto;
 }
-div.ftrWrap>div.footer>h4{}
+div.ftrWrap>div.footer>h4{
+    font-weight: 700;
+}
 div.ftrWrap>div.footer>p{}
 div.ftrWrap>div.footer>div.sns{}
 div.ftrWrap>div.footer>div.sns>i{}

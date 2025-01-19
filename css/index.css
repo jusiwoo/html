@@ -1,24 +1,38 @@
 @import url('./reset.css');
 
 /* 헤더탑 */
-div.hdrTopWrap{}
-div.hdrTopWrap.div.hdrTop{
+div.hdrTopWrap{
+    background-color: #212517;
+}
+div.hdrTopWrap>div.hdrTop{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
+    text-align: center;
 }
-div.hdrTopWrap.div.hdrTop>i{}
+div.hdrTopWrap>div.hdrTop>i{
+    color: #fff;
+}
 
 /* 헤더 */
-div.headerWrap{}
+div.headerWrap{
+    background-color: #a31f30;
+}
 div.headerWrap>div.header{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: capitalize;
 }
 div.headerWrap>div.header>h1{}
 div.headerWrap>div.header>h1{}
-div.headerWrap>div.header>ul{}
+div.headerWrap>div.header>ul{
+    display: flex;
+    column-gap: 10px;
+}
 div.headerWrap>div.header>ul>li{}
 
 /* 컨텐츠 공통 */
@@ -45,7 +59,10 @@ div.cntWrap>div.content.cnt01>div.header{}
 div.cntWrap>div.content.cnt01>div.header>h2{}
 div.cntWrap>div.content.cnt01>div.header>p{}
 div.cntWrap>div.content.cnt01>div.section{}
-div.cntWrap>div.content.cnt01>div.section>div.artTop{}
+div.cntWrap>div.content.cnt01>div.section>div.artTop{
+    display: flex;
+    column-gap: 20px;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts{}
@@ -54,7 +71,10 @@ div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>h4{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>p{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>div.icons{}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts>div.icons>i{}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm{}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm{
+    display: flex;
+    column-gap: 20px;
+}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article{}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image{}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts{}
@@ -65,13 +85,21 @@ div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts>div.i
 
 /* 컨텐츠2 */
 div.cntWrap>div.content.cnt02{}
-div.cntWrap>div.content.cnt02>div.header{}
+div.cntWrap>div.content.cnt02>div.header{
+    background-color: #a31f30;
+}
 div.cntWrap>div.content.cnt02>div.header>h2{}
 div.cntWrap>div.content.cnt02>div.header>p{}
 div.cntWrap>div.content.cnt02>div.section{}
-div.cntWrap>div.content.cnt02>div.section>div.article{}
-div.cntWrap>div.content.cnt02>div.section>div.article>div.image{}
-div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{}
+div.cntWrap>div.content.cnt02>div.section>div.article{
+    display: flex;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
+    width: 50%;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+    width: 50%;
+}
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h4{}
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{}
@@ -82,7 +110,10 @@ div.cntWrap>div.content.cnt03{}
 div.cntWrap>div.content.cnt03>div.header{}
 div.cntWrap>div.content.cnt03>div.header>h2{}
 div.cntWrap>div.content.cnt03>div.header>p{}
-div.cntWrap>div.content.cnt03>div.section{}
+div.cntWrap>div.content.cnt03>div.section{
+    display: flex;
+    column-gap: 20px;
+}
 div.cntWrap>div.content.cnt03>div.section>div.article{}
 div.cntWrap>div.content.cnt03>div.section>div.article>div.image{}
 div.cntWrap>div.content.cnt03>div.section>div.article>div.texts{}
@@ -90,7 +121,9 @@ div.cntWrap>div.content.cnt03>div.section>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt03>div.section>div.article>div.texts>p{}
 
 /* 푸터 */
-div.ftrWrap{}
+div.ftrWrap{
+    background-color: #a31f30;
+}
 div.ftrWrap>div.footer{
     width: 80%;
     max-width: 1080px;

@@ -1,89 +1,117 @@
-.hdrTopWrap {}
-.hdrTopWrap .hdrTop {}
+@import url(./reset.css);
+
+/* 헤더탑 */
+.hdrTopWrap {
+    background-color: #303030;
+}
+.hdrTopWrap .hdrTop {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
 .hdrTopWrap .hdrTop i {}
 
-.headerWrap {}
-.headerWrap header {}
-.headerWrap header h1 {}
-.headerWrap header ul {}
-.headerWrap header ul li {}
+/* 헤더 */
+.hdrWrap {
+    background-color: rgb(123, 3, 3);
+}
+.hdrWrap header {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.hdrWrap header h1 {}
+.hdrWrap header ul {}
+.hdrWrap header ul li {}
 
-/* Content Section 01 */
-.cntWrap .content.cnt01 {}
-.cntWrap .content.cnt01 header {}
-.cntWrap .content.cnt01 header h2 {}
-.cntWrap .content.cnt01 header p {}
-.cntWrap .content.cnt01 section {}
-.cntWrap .content.cnt01 section .artTop {}
-.cntWrap .content.cnt01 section .artTop article {}
-.cntWrap .content.cnt01 section .artTop article .image {}
-.cntWrap .content.cnt01 section .artTop article .image.i1 {}
-.cntWrap .content.cnt01 section .artTop article .image.i2 {}
-.cntWrap .content.cnt01 section .artTop article .texts {}
-.cntWrap .content.cnt01 section .artTop article .texts h3 {}
-.cntWrap .content.cnt01 section .artTop article .texts h4 {}
-.cntWrap .content.cnt01 section .artTop article .texts p {}
-.cntWrap .content.cnt01 section .artTop article .texts .icons {}
-.cntWrap .content.cnt01 section .artBtm {}
-.cntWrap .content.cnt01 section .artBtm article {}
-.cntWrap .content.cnt01 section .artBtm article .image {}
-.cntWrap .content.cnt01 section .artBtm article .image.i1 {}
-.cntWrap .content.cnt01 section .artBtm article .image.i2 {}
-.cntWrap .content.cnt01 section .artBtm article .image.i3 {}
-.cntWrap .content.cnt01 section .artBtm article .texts {}
-.cntWrap .content.cnt01 section .artBtm article .texts h3 {}
-.cntWrap .content.cnt01 section .artBtm article .texts p {}
-.cntWrap .content.cnt01 section .artBtm article .texts .icons {}
+/* 컨텐츠 공통 */
+.cntWrap{}
+.cntWrap .content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.cntWrap .content header{}
+.cntWrap header h2{}
+.cntWrap header p{}
+.cntWrap section{}
+.cntWrap section article{}
+.cntWrap article .image{}
+.cntWrap article .texts{}
+.cntWrap .texts h3{}
+.cntWrap .texts h4{}
+.cntWrap .texts p{}
+.cntWrap .texts i{}
 
-/* Content Section 02 */
-.cntWrap .content.cnt02 {}
-.cntWrap .content.cnt02 header {}
-.cntWrap .content.cnt02 header h2 {}
-.cntWrap .content.cnt02 header p {}
-.cntWrap .content.cnt02 section {}
-.cntWrap .content.cnt02 section article {}
-.cntWrap .content.cnt02 section article .image {}
-.cntWrap .content.cnt02 section article .texts {}
-.cntWrap .content.cnt02 section article .texts h3 {}
-.cntWrap .content.cnt02 section article .texts h4 {}
-.cntWrap .content.cnt02 section article .texts p {}
-.cntWrap .content.cnt02 section article .texts p span {}
-.cntWrap .content.cnt02 section article .texts .button {}
+/* 컨텐츠1 */
+.cnt01{}
+.cnt01 header{}
+.cnt01 header h2{}
+.cnt01 header p{}
+.cnt01 section{}
+.cnt01 section .artTop{}
+.cnt01 .artTop article{}
+.cnt01 .artTop .image{}
+.cnt01 .artTop .image.i1{}
+.cnt01 .artTop .image.i2{}
+.cnt01 .artTop .texts{}
+.cnt01 .artTop .texts h3{}
+.cnt01 .artTop .texts h4{}
+.cnt01 .artTop .texts p{}
+.cnt01 .artTop .texts .icons{}
+.cnt01 .artTop .texts i{}
+.cnt01 section .artBtm{}
+.cnt01 .artBtm article{}
+.cnt01 .artBtm image{}
+.cnt01 .artBtm .image.i1{}
+.cnt01 .artBtm .image.i2{}
+.cnt01 .artBtm .image.i3{}
+.cnt01 .artBtm .texts{}
+.cnt01 .artBtm .texts h3{}
+.cnt01 .artBtm .texts p{}
+.cnt01 .artBtm .texts .icons{}
+.cnt01 .artBtm .texts i{}
 
-/* Content Section 03 */
-.cntWrap .content.cnt03 {}
-.cntWrap .content.cnt03 header {}
-.cntWrap .content.cnt03 header h2 {}
-.cntWrap .content.cnt03 header p {}
-.cntWrap .content.cnt03 section {}
-.cntWrap .content.cnt03 section article {}
-.cntWrap .content.cnt03 section article .image {}
-.cntWrap .content.cnt03 section article .image.i1 {}
-.cntWrap .content.cnt03 section article .image.i2 {}
-.cntWrap .content.cnt03 section article .image.i3 {}
-.cntWrap .content.cnt03 section article .image.i4 {}
-.cntWrap .content.cnt03 section article .texts {}
-.cntWrap .content.cnt03 section article .texts h3 {}
-.cntWrap .content.cnt03 section article .texts p {}
+/* 컨텐츠02 */
+.cnt02{}
+.cnt02 header{
+    background-color: rebeccapurple;
+}
+.cnt02 header h2{}
+.cnt02 header p{}
+.cnt02 section{}
+.cnt02 section article{}
+.cnt02 article .image{}
+.cnt02 article .texts{}
+.cnt02 article .texts h3{}
+.cnt02 article .texts h4{}
+.cnt02 article .texts p{}
+.cnt02 article .texts .button{}
 
+/* 컨텐츠03 */
+.cnt03{}
+.cnt03 header{}
+.cnt03 header h2{}
+.cnt03 header p{}
+.cnt03 section{}
+.cnt03 section article{}
+.cnt03 article .image{}
+.cnt03 article .image.i1{}
+.cnt03 article .image.i2{}
+.cnt03 article .image.i3{}
+.cnt03 article .image.i4{}
+.cnt03 article .texts{}
+.cnt03 article .texts h3{}
+.cnt03 article .texts p{}
+
+/* 푸터 */
 .ftrWrap {}
-.ftrWrap footer {}
+.ftrWrap footer {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
 .ftrWrap footer h4 {}
 .ftrWrap footer p {}
 .ftrWrap footer .sns {}
 .ftrWrap footer .sns i {}
-
-/* Common Content Structure */
-.cntWrap {}
-.cntWrap .content {}
-.cntWrap header {}
-.cntWrap header h2 {}
-.cntWrap section {}
-.cntWrap section article {}
-.cntWrap article .image {}
-.cntWrap article .texts {}
-.cntWrap article .texts h3 {}
-.cntWrap .texts h3 {}
-.cntWrap .texts h4 {}
-.cntWraple .texts p {}
-.cntWraple .texts i {}

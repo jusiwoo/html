@@ -60,6 +60,8 @@
     height: 40px;
     overflow: hidden;
     font-size: 12px;
+    width: 50%;
+    margin: 0 auto;
 }
 .cntWrap section{
     margin-top: 40px;
@@ -79,6 +81,8 @@
     line-height: 40px;
     font-size: 14px;
     font-weight: 700;
+    height: 40px;
+    overflow: hidden;
 }
 .cntWrap .texts p{
     height: 80px;
@@ -104,7 +108,13 @@
 }
 .cnt01 .artTop .image.i1{}
 .cnt01 .artTop .image.i2{}
-.cnt01 .artTop .texts{}
+.cnt01 .artTop .texts{
+    border: 1px solid #ccc;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: calc(100% / 6 * 0.6);
+    padding-right: calc(100% / 6 * 2);
+}
 .cnt01 .artTop .texts h3{}
 .cnt01 .artTop .texts h4{}
 .cnt01 .artTop .texts p{}
@@ -122,7 +132,9 @@
 .cnt01 .artBtm .image.i1{}
 .cnt01 .artBtm .image.i2{}
 .cnt01 .artBtm .image.i3{}
-.cnt01 .artBtm .texts{}
+.cnt01 .artBtm .texts{
+    border: 1px solid #ccc;
+}
 .cnt01 .artBtm .texts h3{}
 .cnt01 .artBtm .texts p{}
 .cnt01 .artBtm .texts .icons{}
@@ -138,6 +150,7 @@
 .cnt02 section{}
 .cnt02 section article{
     display: flex;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 .cnt02 article .image{
     width: 50%;

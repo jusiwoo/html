@@ -1,5 +1,9 @@
 @import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
 
+body{
+    font-family: 'Playwrite IN';
+}
 /* 헤더탑 */
 .hdrTopWrap {
     background-color: #212517;
@@ -12,6 +16,14 @@
 .hdrTopWrap .hdrTop i {}
 
 /* 헤더 */
+@keyframes change {
+    0%{
+        font-family: serif;
+    }
+    100%{
+        font-family: 'Playwrite IN';
+    }
+}
 .hdrWrap {
     background-color: #A31F30;
 }
@@ -25,6 +37,7 @@
     text-transform: capitalize;
     color: #fff;
     font-weight: 700;
+    animation: change 0.5s linear infinite;
 
 }
 .hdrWrap header h1 {
@@ -35,7 +48,9 @@
     column-gap: 20px;
     font-size: 20px;
 }
-.hdrWrap header ul li {}
+.hdrWrap header ul li:nth-of-type(4) {
+    display: none;
+}
 
 /* 컨텐츠 공통 */
 .cntWrap{
@@ -134,6 +149,7 @@
 .cnt01 .artBtm .image.i3{}
 .cnt01 .artBtm .texts{
     border: 1px solid #ccc;
+    padding: 40px 24px;
 }
 .cnt01 .artBtm .texts h3{}
 .cnt01 .artBtm .texts p{}
@@ -141,13 +157,27 @@
 .cnt01 .artBtm .texts i{}
 
 /* 컨텐츠02 */
-.cnt02{}
+.cntWrap .content.cnt02{
+    width: 100%;
+    max-width: none;
+}
 .cnt02 header{
     background-color: rgb(255, 60, 0);
+    padding-top: 80px;
+    padding-bottom: 320px;
 }
 .cnt02 header h2{}
-.cnt02 header p{}
-.cnt02 section{}
+.cnt02 header p{
+    width: calc(80% / 12 * 6);
+    margin: 0 auto;
+    max-width: 520px;
+}
+.cnt02 section{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: -280px;
+}
 .cnt02 section article{
     display: flex;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
@@ -157,17 +187,27 @@
     height: 440px;
 }
 .cnt02 article .texts{
+    background-color: #fff;
     width: 50%;
+    padding: 80px calc(100% / 12);
+    text-align: center;
 }
 .cnt02 article .texts h3{}
 .cnt02 article .texts h4{}
-.cnt02 article .texts p{}
+.cnt02 article .texts p{
+    height: 120px;
+}
 .cnt02 article .texts .button{
     line-height: 40px;
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
 }
 
 /* 컨텐츠03 */
@@ -177,11 +217,19 @@
 .cnt03 header p{}
 .cnt03 section{
     display: flex;
-    column-gap: 20px;
+    justify-content: space-between;
 }
 .cnt03 section article{
     height: 200px;
     overflow: hidden;
+    width: calc(100% / 4 - 20px);
+    transition: all 0.5s;
+}
+.cnt03 section article:hover{
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+.cnt03 section article:hover .texts{
+    margin-top: -200px;
 }
 .cnt03 article .image{
     height: 200px;
@@ -190,9 +238,22 @@
 .cnt03 article .image.i2{}
 .cnt03 article .image.i3{}
 .cnt03 article .image.i4{}
-.cnt03 article .texts{}
+.cnt03 article .texts{
+    padding: 40px 20px;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.5s;
+}
 .cnt03 article .texts h3{}
 .cnt03 article .texts p{}
+.cnt03 article .texts div{
+    width: 55px;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
 
 /* 푸터 */
 .ftrWrap {
@@ -204,6 +265,8 @@
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
+    color: #fff;
+    padding: 40px calc(100% / 12 * 2) 80px;
 }
 .ftrWrap footer h4 {
     line-height: 80px;
@@ -222,3 +285,50 @@
     font-size: 40px;
 }
 .ftrWrap footer .sns i {}
+
+
+
+/* 태블릿 */
+@media screen and (max-width: 1024px){
+    /* 이 안의 속성이 태블릿에서 적용됩니다. */
+    .cntWrap{
+        margin-top: 40px;
+    }
+    .cntWrap header p{
+        width: 100%;
+    }
+    .cnt01 .artTop article:nth-of-type(2){
+        display: none;
+    }
+    .cnt01 section .artBtm{
+        justify-content: space-between;
+        column-gap: unset;
+    }
+    .cnt01 .artBtm article{
+        width: calc(50% - 20px);
+    }
+    .cnt01 .artBtm article:nth-of-type(3){
+        display: none;
+    }
+    .cnt02 article .texts{
+        display: none;
+    }
+    .cnt02 article .image{
+        width: 100%;
+    }
+    .cnt03 section article{
+        width: calc(50% - 15px);
+    }
+    .cnt03 section{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+}
+@media screen and (max-width:500px){
+    .hdrWrap header ul li{
+
+    }
+    .hdrWrap header ul li:nth-of-type(4){
+        display: block;
+    }
+}

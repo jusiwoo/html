@@ -1,31 +1,98 @@
 @import url('./reset.css');
 
 /* 헤더탑 */
-div.hdrTopWrap{}
-div.hdrTopWrap.div.hdrTop{}
-div.hdrTopWrap.div.hdrTop>i{}
+div.hdrTopWrap{
+    background-color: #212517;
+}
+div.hdrTopWrap>div.hdrTop{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-size: 35px;
+}
+div.hdrTopWrap>div.hdrTop>i{}
 
 /* 헤더 */
-div.headerWrap{}
-div.headerWrap>div.header{}
-div.headerWrap>div.header>h1{}
-div.headerWrap>div.header>h1{}
-div.headerWrap>div.header>ul{}
-div.headerWrap>div.header>ul>li{}
+div.headerWrap{
+    background-color: #a31f30;
+}
+div.headerWrap>div.header{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 80px;
+    font-weight: 700;
+}
+div.headerWrap>div.header>h1{
+    font-size: 25px;
+}
+div.headerWrap>div.header>ul{
+    display: flex;
+    column-gap: 10px;
+}
+div.headerWrap>div.header>ul>li{
+    font-size: 20px;
+}
 
 /* 컨텐츠 공통 */
-div.cntWrap{}
-div.cntWrap>div.content{}
+div.cntWrap{
+    margin-top: 80px;
+}
+div.cntWrap>div.content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
 div.cntWrap>div.content>div.header{}
-div.cntWrap>div.content>div.header>h2{}
-div.cntWrap>div.content>div.header>p{}
-div.cntWrap>div.content>div.section{}
+div.cntWrap>div.content>div.header>h2{
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+div.cntWrap>div.content>div.header>p{
+    width: calc(100% / 12 * 6);
+    height: 40px;
+    margin: 0 auto;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+div.cntWrap>div.content>div.section{
+    margin-top: 40px;
+}
 div.cntWrap>div.content>div.section div.article{}
-div.cntWrap>div.content>div.section div.article>div.image{}
-div.cntWrap>div.content>div.section div.article>div.texts{}
-div.cntWrap>div.content>div.section div.article>div.texts>h3{}
-div.cntWrap>div.content>div.section div.article>div.texts>h4{}
-div.cntWrap>div.content>div.section div.article>div.texts>p{}
+div.cntWrap>div.content>div.section div.article>div.image{
+    background-color: #ccc;
+}
+div.cntWrap>div.content>div.section div.article>div.texts{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+div.cntWrap>div.content>div.section div.article>div.texts>h3{
+    line-height: 40px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+div.cntWrap>div.content>div.section div.article>div.texts>h4{
+    line-height: 40px;
+    font-size: 14px;
+}
+div.cntWrap>div.content>div.section div.article>div.texts>p{
+    line-height: 20px;
+    height: 80px;
+    font-size: 12px;
+    overflow: hidden;
+}
 
 /* 컨텐츠1 */
 /* 부모기준으로 (n)번째 자식을 의미하고 type은 같은 태그를 가진 애들을 의미해요 */

@@ -28,3 +28,8 @@ div.cntWrap>div.content>div.section div.article>div.texts>h4{}
 div.cntWrap>div.content>div.section div.article>div.texts>p{}
 
 /* 컨텐츠1 */
+/* 부모기준으로 (n)번째 자식을 의미하고 type은 같은 태그를 가진 애들을 의미해요 */
+div.cntWrap:nth-of-type(3){
+    background-color: aqua;
+}
+div.cntWrap>div.content.cnt01{}

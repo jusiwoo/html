@@ -24,13 +24,16 @@
     line-height: 80px;
     text-transform: capitalize;
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
 
 }
-.hdrWrap header h1 {}
+.hdrWrap header h1 {
+    font-size: 25px;
+}
 .hdrWrap header ul {
     display: flex;
     column-gap: 20px;
+    font-size: 20px;
 }
 .hdrWrap header ul li {}
 
@@ -43,13 +46,20 @@
     max-width: 1080px;
     margin: 0 auto;
 }
-.cntWrap .content header{}
+.cntWrap .content header{
+    text-align: center;
+}
 .cntWrap header h2{
     line-height: 80px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
 }
 .cntWrap header p{
     line-height: 20px;
     height: 40px;
+    overflow: hidden;
+    font-size: 12px;
 }
 .cntWrap section{
     margin-top: 40px;
@@ -61,9 +71,21 @@
 .cntWrap article .texts{}
 .cntWrap .texts h3{
     line-height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
 }
-.cntWrap .texts h4{}
-.cntWrap .texts p{}
+.cntWrap .texts h4{
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cntWrap .texts p{
+    height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 12px;
+}
 .cntWrap .texts i{}
 
 /* 컨텐츠1 */
@@ -119,6 +141,7 @@
 }
 .cnt02 article .image{
     width: 50%;
+    height: 440px;
 }
 .cnt02 article .texts{
     width: 50%;
@@ -126,7 +149,13 @@
 .cnt02 article .texts h3{}
 .cnt02 article .texts h4{}
 .cnt02 article .texts p{}
-.cnt02 article .texts .button{}
+.cnt02 article .texts .button{
+    line-height: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
 
 /* 컨텐츠03 */
 .cnt03{}
@@ -137,8 +166,13 @@
     display: flex;
     column-gap: 20px;
 }
-.cnt03 section article{}
-.cnt03 article .image{}
+.cnt03 section article{
+    height: 200px;
+    overflow: hidden;
+}
+.cnt03 article .image{
+    height: 200px;
+}
 .cnt03 article .image.i1{}
 .cnt03 article .image.i2{}
 .cnt03 article .image.i3{}
@@ -156,8 +190,22 @@
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
+    text-align: center;
 }
-.ftrWrap footer h4 {}
-.ftrWrap footer p {}
-.ftrWrap footer .sns {}
+.ftrWrap footer h4 {
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.ftrWrap footer p {
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.ftrWrap footer .sns {
+    line-height: 80px;
+    font-size: 40px;
+}
 .ftrWrap footer .sns i {}

@@ -2,7 +2,7 @@
 
 /* 헤더탑 */
 .hdrTopWrap {
-    background-color: #303030;
+    background-color: #212517;
 }
 .hdrTopWrap .hdrTop {
     width: 80%;
@@ -13,32 +13,55 @@
 
 /* 헤더 */
 .hdrWrap {
-    background-color: rgb(123, 3, 3);
+    background-color: #A31F30;
 }
 .hdrWrap header {
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+
 }
 .hdrWrap header h1 {}
-.hdrWrap header ul {}
+.hdrWrap header ul {
+    display: flex;
+    column-gap: 20px;
+}
 .hdrWrap header ul li {}
 
 /* 컨텐츠 공통 */
-.cntWrap{}
+.cntWrap{
+    margin-top: 80px;
+}
 .cntWrap .content{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
 }
 .cntWrap .content header{}
-.cntWrap header h2{}
-.cntWrap header p{}
-.cntWrap section{}
+.cntWrap header h2{
+    line-height: 80px;
+}
+.cntWrap header p{
+    line-height: 20px;
+    height: 40px;
+}
+.cntWrap section{
+    margin-top: 40px;
+}
 .cntWrap section article{}
-.cntWrap article .image{}
+.cntWrap article .image{
+    background-color: #ccc;
+}
 .cntWrap article .texts{}
-.cntWrap .texts h3{}
+.cntWrap .texts h3{
+    line-height: 40px;
+}
 .cntWrap .texts h4{}
 .cntWrap .texts p{}
 .cntWrap .texts i{}
@@ -49,9 +72,14 @@
 .cnt01 header h2{}
 .cnt01 header p{}
 .cnt01 section{}
-.cnt01 section .artTop{}
+.cnt01 section .artTop{
+    display: flex;
+    column-gap: 20px;
+}
 .cnt01 .artTop article{}
-.cnt01 .artTop .image{}
+.cnt01 .artTop .image{
+    height: 320px;
+}
 .cnt01 .artTop .image.i1{}
 .cnt01 .artTop .image.i2{}
 .cnt01 .artTop .texts{}
@@ -60,9 +88,15 @@
 .cnt01 .artTop .texts p{}
 .cnt01 .artTop .texts .icons{}
 .cnt01 .artTop .texts i{}
-.cnt01 section .artBtm{}
+.cnt01 section .artBtm{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 40px;
+}
 .cnt01 .artBtm article{}
-.cnt01 .artBtm image{}
+.cnt01 .artBtm .image{
+    height: 320px;
+}
 .cnt01 .artBtm .image.i1{}
 .cnt01 .artBtm .image.i2{}
 .cnt01 .artBtm .image.i3{}
@@ -75,14 +109,20 @@
 /* 컨텐츠02 */
 .cnt02{}
 .cnt02 header{
-    background-color: rebeccapurple;
+    background-color: rgb(255, 60, 0);
 }
 .cnt02 header h2{}
 .cnt02 header p{}
 .cnt02 section{}
-.cnt02 section article{}
-.cnt02 article .image{}
-.cnt02 article .texts{}
+.cnt02 section article{
+    display: flex;
+}
+.cnt02 article .image{
+    width: 50%;
+}
+.cnt02 article .texts{
+    width: 50%;
+}
 .cnt02 article .texts h3{}
 .cnt02 article .texts h4{}
 .cnt02 article .texts p{}
@@ -93,7 +133,10 @@
 .cnt03 header{}
 .cnt03 header h2{}
 .cnt03 header p{}
-.cnt03 section{}
+.cnt03 section{
+    display: flex;
+    column-gap: 20px;
+}
 .cnt03 section article{}
 .cnt03 article .image{}
 .cnt03 article .image.i1{}
@@ -105,7 +148,10 @@
 .cnt03 article .texts p{}
 
 /* 푸터 */
-.ftrWrap {}
+.ftrWrap {
+    background-color: #a31f30;
+    margin-top: 80px;
+}
 .ftrWrap footer {
     width: 80%;
     max-width: 1080px;
